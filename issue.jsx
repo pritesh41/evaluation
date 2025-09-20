@@ -1,11 +1,8 @@
-// IssueDashboard.jsx
-// Hinglish: Yeh basic plain JSX hai, CSS bilkul nahi hai.
 
 import React, { useEffect, useState, useReducer } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
-// IssueCard bina kisi style ke, React.memo optimization ke saath
 const IssueCard = React.memo(function IssueCard({ issue }) {
   return (
     <div>
@@ -97,5 +94,6 @@ function IssueDashboard() {
     </div>
   );
 }
+
 
 export default IssueDashboard;
